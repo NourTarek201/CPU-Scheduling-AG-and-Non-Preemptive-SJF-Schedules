@@ -12,7 +12,8 @@
    * If(RF()<10 )-> AG-Factor = RF() + Arrival Time + Burst Time
    * If(RF()>10 )-> AG-Factor = 10 + Arrival Time + Burst Time
    * If(RF()=10 )-> AG-Factor = Priority + Arrival Time + Burst Time
-* Once a process is executed for given time period, it’s called Non-preemptive AG till the finishing of (ceil (50%)) of its Quantum time, after that it’s converted to preemptive AG  preemptive AG : processes will always run until they complete or a new process is added that requires a smaller AG-Factor
+* Once a process is executed for given time period, it’s called Non-preemptive AG till the finishing of (ceil (50%)) of its Quantum time, after that it’s converted to preemptive AG
+  * preemptive AG : processes will always run until they complete or a new process is added that requires a smaller AG-Factor
   
 * We have 3 scenarios of the running process
   * i. The running process used all its quantum time and it still have job to do
