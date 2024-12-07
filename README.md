@@ -7,8 +7,11 @@
   
 * A new factor is suggested to attach with each submitted process in our AG scheduling algorithm. This factor sums the effects of all three basic factors ((random_function(0,20) or 10 or priority), arrival time and burst time)The equation summarizes this relation is: AG-Factor = (Priority or 10 or (random_function (0,20)) + Arrival Time + Burst Time
   
-* A new Random function (RF) is suggested between (0,20) and attached with each submitted process in our AG scheduling algorithm. This RF can update the AG-Factor based on the random number.
- If(RF()<10 )-> AG-Factor = RF() + Arrival Time + Burst Time  If(RF()>10 )-> AG-Factor = 10 + Arrival Time + Burst Time  If(RF()=10 )-> AG-Factor = Priority + Arrival Time + Burst Time
+* A new Random function (RF) is suggested between (0,20) and attached with each submitted process in our AG scheduling algorithm.
+  This RF can update the AG-Factor based on the random number.
+   * If(RF()<10 )-> AG-Factor = RF() + Arrival Time + Burst Time
+   * If(RF()>10 )-> AG-Factor = 10 + Arrival Time + Burst Time
+   * If(RF()=10 )-> AG-Factor = Priority + Arrival Time + Burst Time
 * Once a process is executed for given time period, it’s called Non-preemptive AG till the finishing of (ceil (50%)) of its Quantum time, after that it’s converted to preemptive AG  preemptive AG : processes will always run until they complete or a new process is added that requires a smaller AG-Factor
   
 * We have 3 scenarios of the running process
