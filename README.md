@@ -1,8 +1,8 @@
-# CPU-Scheduling - AG and Non-Preemptive Shortest- Job First (SJF) Schedules
+# CPU-Scheduling - AG and Non-Preemptive (SJF) Schedules
 
 ## About
 
-### AG Scheduling :
+### AG Scheduling
 * The Round Robin (RR) CPU scheduling algorithm is a fair scheduling algorithm that gives equal time quantum to all processes So All processes are provided a static time to execute called quantum.
   
 * A new factor is suggested to attach with each submitted process in our AG scheduling algorithm. This factor sums the effects of all three basic factors ((random_function(0,20) or 10 or priority), arrival time and burst time)The equation summarizes this relation is: AG-Factor = (Priority or 10 or (random_function (0,20)) + Arrival Time + Burst Time
